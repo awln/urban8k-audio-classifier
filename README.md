@@ -1,4 +1,5 @@
 # urban8k-audio-classifier
+<<<<<<< HEAD
     Urban8k sound classification based on an AlexNet architecture 
     Dataset found at https://urbansounddataset.weebly.com/urbansound8k.html
     Developed with Python 3.7 with the following libraries:
@@ -20,3 +21,5 @@
 ## Testing and Training Analysis
 
 ## Predictions
+=======
+>>>>>>> 6b555f9d5492718920bc8f12781866395b46134c
