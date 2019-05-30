@@ -1,6 +1,8 @@
 # urban8k-audio-classifier
 <p> Urban8k sound classification based on an AlexNet architecture </p>
 <p> Dataset found at https://urbansounddataset.weebly.com/urbansound8k.html </p>
+
+### Dependencies
 Developed with Python 3.7 with the following libraries:
 * Tensorflow
 * keras
