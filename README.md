@@ -14,6 +14,7 @@ Developed with Python 3.7 with the following libraries:
 
 ## Exploratory Data Analysis
 Sample audio distribution
+
 <img src="https://raw.githubusercontent.com/awln/urban8k-audio-classifier/master/distribution.png"/>
 
 Time Series on classes
