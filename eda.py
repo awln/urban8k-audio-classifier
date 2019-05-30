@@ -94,8 +94,8 @@ def main():
     ax.set_title('Class Distribution', y=1.08)
     ax.pie(class_dict, labels=class_dict.index, autopct='%1.1f%%', shadow=False, startangle=90)
     ax.axis('equal')
+    plt.savefig("distribution")
     plt.show(block=False)
-    plt.savefig("plot")
     df.reset_index(inplace=True)
 
     signals = {}
@@ -118,27 +118,27 @@ def main():
         mfccs[c] = mel
     
     plot_signals(signals)
-    plt.show()
     plt.savefig("time_series")
+    plt.show()
     
     plot_fft(fft)
-    plt.show()
     plt.savefig("fft")
+    plt.show()
 
     plot_fbank(fbank)
-    plt.show()
     plt.savefig("filterbank")
+    plt.show()
 
     plot_mfccs(mfccs)
-    plt.show()
     plt.savefig("mfcc")
+    plt.show()
     
     df.set_index('slice_file_name', inplace=True)
     
     if len(os.listdir('clean_data')) == 0:
         for f in tqdm(df.index):
             signal, rate = librosa.load('audio/fold'+str(df.at[f, 'fold'])+'/'+f, sr=16000)
-            mask = envelope(signal, rate, 0.0005)
+            mask = envelope(signal, rate, 0.000005)
             wavfile.write(filename='clean_data/' + f, rate=rate, data=signal[mask])
 
 
