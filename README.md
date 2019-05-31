@@ -1,5 +1,6 @@
 # urban8k-audio-classifier
-<p> Urban8k sound classification based on an AlexNet architecture </p>
+<p> Urban8k sound classification based on an AlexNet convolutional neural network architecture </p>
+<p> An important aspect is the preprocessing of the audio for defining characteristics in audio classes by taking the mel cepstral coefficient of the filter bank energies.</p>
 <p> Dataset found at https://urbansounddataset.weebly.com/urbansound8k.html </p>
 
 ### Dependencies
@@ -32,5 +33,6 @@ Mel frequency cepstral coefficients
 <img src="https://raw.githubusercontent.com/awln/urban8k-audio-classifier/master/mfcc.png"/>
     
 ## Testing and Training Analysis
+Training on the audio was based off k-fold cross validation.
 
 ## Predictions
